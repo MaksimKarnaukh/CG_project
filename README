@@ -1,0 +1,53 @@
+Naam: Karnaukh Maksim
+Studentennummer: 20201604
+
+## Gequoteerde functionaliteit
+
+V: Werkend
+-: Deels werkend met gekende problemen (onderaan beschreven)
+X: Niet werkend of niet geïmplementeerd
+(blanco): TODO
+
+
+|   | Functionaliteit      | Status |
+|---|---------------------------|---|
+| 1 | 2D L-systemen             | V |
+|   | Met haakjes               | V |
+|   | Stochastisch              | V |
+| 2 | Transformaties            | V |
+|   | Eye-point                 | V |
+|   | Projectie                 | V |
+| 3 | Platonische Lichamen      | V |
+|   | Kegel en cylinder         | V |
+|   | Bol                       | V |
+|   | Torus                     | V |
+|   | 3D L-systemen             | V |
+| 4 | Z-buffering (lijnen)      | V |
+| 5 | Triangulatie              | V |
+|   | Z-buffering (driehoeken)  | V |
+| 6 | 3D fractalen              | V |
+|   | BuckyBall                 | V |
+|   | Mengerspons               | V |
+|   | View Frustum              | X |
+| 7 | Ambient licht             | V |
+|   | Diffuus licht (oneindig)  | V |
+|   | Diffuus licht (puntbron)  | V |
+|   | Speculair licht           | V |
+| 8 | Schaduw                   | - |
+|   | Texture mapping           | X |
+| 9 | Bollen en cylinders       | X |
+|   | UV-coordinaten            | X |
+|   | Cube mapping              | X |
+
+
+## Gekende problemen
+Bij de implementatie van schaduwen, heb ik het algoritme voor schaduwen volledig geïmplementeerd, maar de afbeeldingen zijn niet 100% juist.
+Ik heb mijn formules gecheckt en geen fouten gevonden daarin.
+## Niet-gequoteerde functionaliteit
+...
+
+## Extra functionaliteit, niet in de opgaves beschreven
+1) Stochastische replacement rules: Ik heb dit mee in mijn engine geïmplementeerd.
+   Een voorbeeld .ini bestand staat in de map stochastischeRepRules (in de root folder), dit bestand heet stochastisch_lsysteem_SRR.ini en
+   het meegegeven .L2D bestand heet SRRExample.L2D. De functie die dit ondersteunt, werkt met srand (time) (zie in code bij klasse L2Dsysteem.cpp)
+   zodat elke keer andere randomvariabelen worden aangemaakt en dus een andere afbeelding wordt gecreëerd.
